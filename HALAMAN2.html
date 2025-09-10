@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: url(/pexels-shonejai-445753-1227511.jpg);
+        background-size: cover;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        background: url(/pexels-padrinan-19670.jpg) transparent;
+        box-shadow: 0 2px 10px rgba(241, 241, 241, 0.1);
+        backdrop-filter: blur(10px);
+        animation: slideDown 0.5s ease-out;
+        border: 2px solid rgb(255, 255, 255);
+        background-size: cover;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .logo {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      a {
+        color: black;
+      }
+
+      .linkmenu {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .linkmenu a {
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+        transition: color 3ms;
+      }
+
+      .linkmenu a:hover {
+        color: rgb(255, 25, 25);
+      }
+
+      .linkmenu a:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary);
+        transition: width 0.3s;
+      }
+
+      .linkmenu a:hover::after {
+        width: 100%;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .tentang {
+        border: 1px solid;
+        padding: 2%;
+        width: 1000px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 254, 252);
+      }
+
+      .tentang h1 {
+        font-size: xx-large;
+        letter-spacing: 5px;
+        padding: 2px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .fungsi {
+        border: 1px solid;
+        padding: 2%;
+        width: 1000px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 254, 252);
+      }
+
+      h1 {
+        font-size: xx-large;
+        letter-spacing: 5px;
+        padding: 2px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">PERPUSTAKAAN</a>
+      <div class="linkmenu">
+        <a href="">HOME</a>
+        <a href="index2.html">DATA</a>
+        <a href="about.html">ABOUT</a>
+        <a href="ipendaftaran.html">PENDAFTARAN</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
+    <center>
+      <h1>HOME</h1>
+      <br />
+      <br />
+      <div class="tentang">
+        <h1>PENJELASAN</h1>
+        <p>
+          Perpustakaan adalah institusi atau lembaga yang bertugas mengumpulkan,
+          mengelola, menyimpan, dan menyebarluaskan informasi serta pengetahuan
+          dalam berbagai bentuk, baik tercetak maupun terekam, untuk memenuhi
+          kebutuhan intelektualitas penggunanya. Selain sebagai pusat
+          penyimpanan buku, perpustakaan modern juga berfungsi sebagai tempat
+          pembelajaran, penelitian, pelestarian budaya, dan
+          pengembangan literasi.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div class="fungsi">
+        <h1>FUNGSI</h1>
+        <p>
+          Fungsi Utama Perpustakaan Penyimpanan dan Pengelolaan Informasi:
+          Mengelola koleksi informasi dan pengetahuan secara sistematis agar
+          mudah diakses dan digunakan oleh pemakai. Penyebarluasan Informasi:
+          Melayani pemakai dengan menyediakan informasi yang bermanfaat untuk
+          pendidikan, penelitian, dan pengembangan masyarakat. Pusat
+          Pembelajaran: Menjadi tempat belajar dan mengembangkan potensi diri
+          melalui berbagai sumber informasi.
+        </p>
+      </div>
+    </center>
+    <br /><br /><br /><br />
+  </body>
+  <script src="serch.js"></script>
+</html>
